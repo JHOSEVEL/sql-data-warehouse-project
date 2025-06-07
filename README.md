@@ -1,59 +1,103 @@
-#Data Warehouse and Analytics Project
+📊 Data Warehouse and Analytics Project
+Bem-vindo ao repositório do Data Warehouse and Analytics Project! 🚀
+Este projeto demonstra o desenvolvimento de uma solução completa de data warehouse e analytics — desde a ingestão e modelagem dos dados até a geração de insights estratégicos para o negócio.
 
-Welcome to the Data Warehouse and Analytics Project repository! 🚀
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+🏗️ Data Architecture: Medallion Design
+A arquitetura adotada segue o padrão moderno Medallion Architecture, dividida em três camadas:
 
-#🏗️ Data Architecture
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: Data Architecture
+🔸 Bronze Layer: Armazena os dados brutos exatamente como foram extraídos dos sistemas fonte (ERP e CRM) em arquivos .csv, posteriormente carregados no banco de dados SQL Server.
 
-Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
-📖 Project Overview
-This project involves:
+🔹 Silver Layer: Realiza a limpeza, padronização e transformação dos dados. Esta camada torna os dados consistentes e prontos para análise.
 
-Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
-ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-Data Modeling: Developing fact and dimension tables optimized for analytical queries.
-Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
+⭐ Gold Layer: Contém dados de negócio organizados em modelo estrela (Star Schema), otimizados para relatórios e consultas analíticas.
 
-SQL Development
-Data Architect
-Data Engineering
-ETL Pipeline Developer
-Data Modeling
-Data Analytics
-🛠️ Important Links & Tools:
-Everything is for Free!
+📖 Projeto - Visão Geral
+Este projeto contempla as seguintes etapas:
 
-Datasets: Access to the project dataset (csv files).
-SQL Server Express: Lightweight server for hosting your SQL database.
-SQL Server Management Studio (SSMS): GUI for managing and interacting with databases.
-Git Repository: Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-DrawIO: Design data architecture, models, flows, and diagrams.
-Notion: Get the Project Template from Notion
-Notion Project Steps: Access to All Project Phases and Tasks.
+🔧 Engenharia de Dados (Data Engineering)
+Arquitetura de Dados: Planejamento e construção do Data Warehouse baseado na arquitetura Medallion.
 
-#🚀 Project Requirements
+Pipelines ETL: Desenvolvimento de processos ETL para extração, transformação e carga dos dados.
 
-Building the Data Warehouse (Data Engineering)
-Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+Modelagem de Dados: Criação de tabelas fato e dimensão conforme as melhores práticas analíticas.
 
-Specifications
-Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
-Data Quality: Cleanse and resolve data quality issues prior to analysis.
-Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
-Scope: Focus on the latest dataset only; historization of data is not required.
-Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-BI: Analytics & Reporting (Data Analysis)
-Objective
-Develop SQL-based analytics to deliver detailed insights into:
+📊 Análise de Dados (Data Analysis)
+Consultas SQL: Elaboração de queries analíticas para gerar KPIs e indicadores de negócio.
 
-Customer Behavior
-Product Performance
-Sales Trends
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+Dashboards: Criação de relatórios e dashboards para facilitar a tomada de decisão.
 
-For more details, refer to docs/requirements.md.
+🎯 Público-Alvo e Aplicações
+Este projeto é ideal para:
+
+Analistas de Dados
+
+Engenheiros de Dados
+
+Cientistas de Dados
+
+Desenvolvedores SQL
+
+Estudantes de tecnologia e business intelligence
+
+Profissionais em transição para a área de dados
+
+🧰 Ferramentas e Recursos Gratuitos
+📁 Dataset: Arquivos .csv representando os dados de ERP e CRM.
+
+🛠️ SQL Server Express: Banco de dados leve e gratuito para testes e desenvolvimento.
+
+🖥️ SQL Server Management Studio (SSMS): Interface gráfica para gerenciamento do banco.
+
+🧠 Draw.io: Utilizado para modelagem de dados e fluxogramas ETL.
+
+📚 Notion: Documentação e acompanhamento do projeto (modelo de projeto disponível).
+
+🐙 GitHub: Versionamento do código, scripts SQL, documentação e colaborações.
+
+📌 Requisitos do Projeto
+Etapa 1 – Construção do Data Warehouse (Engenharia)
+Objetivo: Consolidar dados de vendas oriundos de dois sistemas (ERP e CRM), preparando-os para análise e geração de insights estratégicos.
+
+Especificações:
+
+Fontes: ERP e CRM via arquivos .csv.
+
+Qualidade de Dados: Tratamento de valores nulos, duplicados e inconsistentes.
+
+Integração: Unificação em um único modelo de dados analítico.
+
+Escopo: Trabalhar apenas com o conjunto de dados mais recente.
+
+Documentação: Explicações claras sobre o modelo de dados para equipes técnicas e de negócios.
+
+Etapa 2 – Análise & Relatórios (Analytics)
+Objetivo: Utilizar SQL para criar análises e relatórios que respondam a perguntas-chave do negócio, como:
+
+Quais produtos são mais vendidos?
+
+Quem são os melhores clientes?
+
+Qual o desempenho das equipes de vendas?
+
+Quais regiões apresentam maior faturamento?
+
+📁 Organização do Repositório
+plaintext
+Copiar
+Editar
+├── datasets/
+│   ├── erp_data.csv
+│   └── crm_data.csv
+├── sql/
+│   ├── create_tables.sql
+│   ├── etl_scripts.sql
+│   └── reporting_queries.sql
+├── diagrams/
+│   ├── data_architecture.png
+│   └── star_schema_model.drawio
+├── documentation/
+│   ├── data_dictionary.md
+│   └── project_overview.pdf
+└── dashboards/
+    └── sales_dashboard.pbix
+
