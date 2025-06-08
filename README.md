@@ -1,9 +1,11 @@
-📊 Data Warehouse and Analytics Project
-Bem-vindo ao repositório do Data Warehouse and Analytics Project! 🚀
-Este projeto demonstra o desenvolvimento de uma solução completa de data warehouse e analytics — desde a ingestão e modelagem dos dados até a geração de insights estratégicos para o negócio.
+📊 Data Warehouse e Projeto de Analise de Dados!
 
-🏗️ Data Architecture: Medallion Design
-A arquitetura adotada segue o padrão moderno Medallion Architecture, dividida em três camadas:
+Bem-vindo ao repositório do Data Warehouse e Projeto de Analise de Dados! 
+
+🚀Este projeto demonstra o desenvolvimento de uma solução completa de data warehouse e analytics — desde a ingestão e modelagem dos dados até a geração de insights estratégicos para o negócio.
+
+🏗️ Data Architecture: Design Medallion 
+    A arquitetura adotada segue o padrão moderno Medallion Architecture, dividida em três camadas:
 
 🔸 Bronze Layer: Armazena os dados brutos exatamente como foram extraídos dos sistemas fonte (ERP e CRM) em arquivos .csv, posteriormente carregados no banco de dados SQL Server.
 
@@ -15,19 +17,19 @@ A arquitetura adotada segue o padrão moderno Medallion Architecture, dividida e
 Este projeto contempla as seguintes etapas:
 
 🔧 Engenharia de Dados (Data Engineering)
-Arquitetura de Dados: Planejamento e construção do Data Warehouse baseado na arquitetura Medallion.
+    Arquitetura de Dados: Planejamento e construção do Data Warehouse baseado na arquitetura Medallion.
 
 Pipelines ETL: Desenvolvimento de processos ETL para extração, transformação e carga dos dados.
 
 Modelagem de Dados: Criação de tabelas fato e dimensão conforme as melhores práticas analíticas.
 
 📊 Análise de Dados (Data Analysis)
-Consultas SQL: Elaboração de queries analíticas para gerar KPIs e indicadores de negócio.
+    Consultas SQL: Elaboração de queries analíticas para gerar KPIs e indicadores de negócio.
 
 Dashboards: Criação de relatórios e dashboards para facilitar a tomada de decisão.
 
 🎯 Público-Alvo e Aplicações
-Este projeto é ideal para:
+    Este projeto é ideal para:
 
 Analistas de Dados
 
