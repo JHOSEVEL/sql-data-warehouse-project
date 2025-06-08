@@ -1,1 +1,10 @@
 
+CREATE DATABASE DataWarehouse;
+
+use DataWarehouse;
+
+create schema bronze;
+
+create schema prata;
+
+create schema ouro;
